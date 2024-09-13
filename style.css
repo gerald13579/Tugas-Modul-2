@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+/****************************************** HEADER START *******************************************/
+.header {
+    background-color: #1E201E;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/****************************************** HEADER START *******************************************/
+
+
+/****************************************** DATALIST START *******************************************/
+.search-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#content-search {
+    width: 60%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#content-search:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/****************************************** DATALIST END *******************************************/
+
+
+
+/****************************************** ABOUT US START *******************************************/
+.aboutus-container {
+    padding: 50px 10%;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-header {
+    padding-top: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus-header h1 {
+    font-size: 2.5em;
+}
+
+.aboutus-text {
+    text-align: justify;
+    line-height: 1.8rem;
+}
+
+.aboutus-img {
+    display: flex;
+}
+.aboutus-img img {
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+}
+
+@media (max-width:750px) {
+    .aboutus-container {
+        padding: 10px;
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .aboutus-img {
+        order: -1;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aboutus-img img {
+        width: 100%;
+    }
+}
+/****************************************** ABOUT US START *******************************************/
+
+/****************************************** VISI MISI START *******************************************/
+
+.visimisi-container {
+    padding: 50px 5%;
+    background: #1E201E;
+    color: #F5F5F5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.visimisi-container h1 {
+    font-size: 2.5em
+}
+
+
+.visimisi-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.visimisi-col {
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 45%;
+    color: #F5F5F5;
+    border-radius: 20px;
+}
+
+.visimisi-col p {
+    font-weight: 200;
+    padding-top: 10px;
+}
+
+/****************************************** VISI MISI END *******************************************/
+
+
+/****************************************** OUR TEAM START *******************************************/
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+.team-column {
+    width: 100%;
+    padding: 0.5em 0;
+}
+.team-row h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #1E201E;
+}
+.team-card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: #1E201E;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+.team-card .team-img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #686D76;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+}
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+.team-card h3 {
+    font-weight: 500;
+}
+.team-card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+}
+.team-icons {
+    width: 10%;
+    min-width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.team-card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+}
+.team-card:hover {
+    background: linear-gradient(90deg, rgba(67,67,73,1) 0%, rgba(0,0,0,1) 87%);
+    color: #ffffff;
+}
+.team-card:hover .team-img-container {
+    transform: scale(1.15);
+}
+@media screen and (min-width: 768px) {
+    section {
+        padding: 1em 7em;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em;
+    }
+    .team-card {
+        padding: 5em 1em;
+    }
+    .team-column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        padding: 0 1em;
+    }
+} 
+/****************************************** OUR TEAM END *******************************************/
+
+/****************************************** OUR SERVICE START *******************************************/
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row h1 {
+    font-size: 2.5em;
+    color: #1E201E;
+    padding-bottom: 30px;
+}
+.column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #1E201E 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1E201E;
+    margin: 1em 0;
+}
+.card p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+}
+.icon-wrapper {
+    background-color: #1E201E;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+.card:hover {
+    background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #1E201E;
+}
+.card:hover h3 {
+    color: #ffffff;
+}
+.card:hover p {
+    color: #f0f0f0;
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: 0 2em;
+    }
+    .column {
+        flex: 0 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (min-width: 992px) {
+    section {
+        padding: 1em 3em;
+    }
+    .column {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/****************************************** OUR SERVICE END *******************************************/
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 30px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1.5em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+    font-size: 15px;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
